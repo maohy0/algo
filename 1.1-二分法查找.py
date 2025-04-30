@@ -15,11 +15,9 @@ def search(nums: List[int], target: int) -> int:
     return -1  # 未找到目标值
 
 # 输入处理
-print("请输入一个升序排列的整数数组，用空格分隔:")
-nums = list(map(int, input().split()))
-    
-print("请输入要查找的目标值:")
-target = int(input())
+nums = list(map(int, input("请输入一个升序排列的整数数组，用空格分隔:").split()))
+
+target = int(input("请输入要查找的目标值:"))
     
 # 调用二分查找
 result = search(nums, target)
