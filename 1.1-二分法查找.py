@@ -16,6 +16,7 @@ def search(nums: List[int], target: int) -> int:
 
 # 输入处理
 nums = list(map(int, input("请输入一个升序排列的整数数组，用空格分隔:").split()))
+print(nums)
 
 target = int(input("请输入要查找的目标值:"))
     
