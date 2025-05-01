@@ -1,4 +1,4 @@
-def min_subarray(nums, s) -> int:
+def min_subarray(nums: list[int], s: int) -> int:
     # 采用滑动窗口法求解，思想类似1.2用到的双指针
     left = 0 # 左指针
     right = 0 # 右指针

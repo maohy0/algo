@@ -1,4 +1,4 @@
-def squared_sorted_array(nums) -> list[int]:
+def squared_sorted_array(nums: list[int]) -> list[int]:
     for i in range(len(nums)):
         nums[i] = nums[i] ** 2
     nums.sort() # 暴力排序
