@@ -20,22 +20,22 @@ void main()
 {
     int numslen = 0;
     int val = 0;
-    printf("请输入数组长度：\n");
+    printf("Please input the length of nums:\n");
     scanf("%d",&numslen);
     int nums[numslen];
-    printf("请输入数组元素：\n");
+    printf("Please input nums:\n");
     for(int i=0;i<numslen;++i)
     {
         scanf("%d",&nums[i]);
     }
-    printf("请输入要删除的元素：\n");
+    printf("Please input val:\n");
     scanf("%d",&val);
     int newlength;
     newlength = RemoveElement(nums,numslen,val);
-    printf("新数组的长度为：%d\n",newlength);
-    printf("新数组为：\n");
+    printf("Length of new nums: %d\n",newlength);
+    printf("new nums:\n");
     for(int i=0;i<newlength;++i)
     {
-        printf("%d ",nums[i]);
+        printf("%d\t",nums[i]);
     }
 }
