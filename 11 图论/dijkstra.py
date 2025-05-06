@@ -1,5 +1,3 @@
-import sys
-
 def dijkstra(n: int, m: int, edges: list[tuple[int, int, int]], start: int, end: int) -> int:
     # n是节点数，m是边数，edges是边的列表，start是起点编号，end是终点编号
     # 图顶点的编号从1到n
