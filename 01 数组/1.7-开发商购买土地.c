@@ -31,7 +31,7 @@ void main()
         }
     }
 
-    // 跟1.6类似，存储为累加值
+    // 跟1.6类似，计算前缀和
     for(int i = 1; i < n; ++i)
     {
         r[i] += r[i - 1];
@@ -61,7 +61,7 @@ void main()
         ++ret1;
     }
 
-    printf("%d\n", (ret_ver <= ret_hor) ? ret_ver : ret_hor);
+    printf("%d\n", (ret_ver <= ret_hor) ? ret_ver : ret_hor);   // 输出最小差距
 
     free(r);
     free(c);

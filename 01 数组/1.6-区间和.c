@@ -1,13 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-// #include <time.h>
 
 void main()
 {
-    // time_t start, stop;
-    // double duration;
-    // start = clock();
-
     int n;    // 数组长度
     scanf("%d", &n);
 
@@ -25,13 +20,10 @@ void main()
 
     int left, right;
 
-    if(scanf("%d%d", &left, &right) == 2)    // 一个很有趣的知识点，scanf是有返回值的，返回成功匹配并赋值的个数
+    while(scanf("%d%d", &left, &right) == 2)    // 一个很有趣的知识点，scanf是有返回值的，返回成功匹配并赋值的个数
     {
         printf("%d\n", a[right + 1] - a[left]);
     }
 
     free(a);
-    // stop = clock();
-    // duration = (double)(stop - start) / CLOCKS_PER_SEC;
-    // printf("Time used: %lf s", duration);
 }
