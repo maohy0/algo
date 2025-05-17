@@ -1,4 +1,4 @@
-def generate_matrix(n: int) -> list[int]:
+def generate_matrix(n: int) -> list[list[int]]:
     matrix = [[0] * n for _ in range(n)]    # 初始化矩阵，n行n列0
     top, bottom, left, right = 0, n-1, 0, n-1   # 初始化上下左右4个边界
     element = 1 # 矩阵元素
