@@ -1,4 +1,4 @@
-def twosum(nums: list[int], target: int) -> list[int]:
+def sum2(nums: list[int], target: int) -> list[int]:
     records = dict()    # 用字典，key-value结构
 
     # enumerate枚举，同时获取数组中元素的索引和值
